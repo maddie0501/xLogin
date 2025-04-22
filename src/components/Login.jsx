@@ -28,9 +28,10 @@ function Login() {
           {error && <p>Invalid username or password</p>}
 
           <form onSubmit={handleSubmit}>
-            <label>
+            <label htmlFor="username">
               Username:
-              <input
+                          <input
+                              id="username"
                 type="text"
                 name="username"
                 placeholder="username"
@@ -41,9 +42,10 @@ function Login() {
             </label>
 
             <br />
-            <label>
+            <label htmlFor="password">
               Password:
-              <input
+                          <input
+                              id="password"
                 type="password"
                 name="password"
                 placeholder="password"
