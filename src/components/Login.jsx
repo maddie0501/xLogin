@@ -28,30 +28,26 @@ function Login() {
           {error && <p>Invalid username or password</p>}
 
           <form onSubmit={handleSubmit}>
-            <label>
-              Username
-              <input
-                type="text"
-                name="username"
-                placeholder="username"
-                value={username}
-                onChange={(e) => setUsername(e.target.value)}
-                required
-              />
-            </label>
+            <label>Username</label>
+            <input
+              type="text"
+              name="username"
+              placeholder="username"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+              required
+            />
 
             <br />
-            <label>
-              Password
-              <input
-                type="password"
-                name="password"
-                placeholder="password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                required
-              />
-            </label>
+            <label>Password</label>
+            <input
+              type="password"
+              name="password"
+              placeholder="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
+            />
 
             <br />
             <button type="submit">Submit</button>
